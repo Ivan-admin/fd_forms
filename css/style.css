@@ -18,3 +18,20 @@ h1{
 .flex > *{
   flex: 1;
 }
+
+
+input:valid{
+  border: 2px solid green;
+}
+
+input:invalid{
+  border: 2px solid red;
+}
+
+input::placeholder{
+  color: orange;
+}
+
+input:checked{
+   margin-left: 25px;
+}
