@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <form method="GET">
+    <form method="POST" enctype="multipart/form-data">
       <label>
         <span>Enter your name:</span>
         <input
@@ -15,19 +15,12 @@
           type="text"
           placeholder="First name"
           name="firstName"
-          pattern="[A-Z][a-z]{2,15}"
           required
         />
       </label>
       <label>
         <span> Enter your surname: </span>
-        <input
-          type="text"
-          pattern="[A-Z][a-z]{2,15}"
-          placeholder="Last Name"
-          name="lastName"
-          required
-        />
+        <input type="text" placeholder="Last Name" name="lastName" required />
       </label>
 
       <input type="tel" autocomplete="on" placeholder="Your telephone here:" />
@@ -43,59 +36,59 @@
         />
       </label>
 
-      <input type="text" pattern="[0-9]{2}" placeholder="Введите размер ноги" />
+      <input type="text" placeholder="Введите размер ноги" value="44"/>
 
-      <input
-        type="password"
-        pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,32}"
-        placeholder="Password"
-        name="password"
-        required
-      />
+      <input type="password" placeholder="Password" name="password" required />
 
       <p>Choose your state:</p>
 
-      <label> Male <input type="radio" name="state" value="male" required/></label>
-      <label>Female<input type="radio" name="state" value="female"/></label>
+      <label>
+        Male <input type="radio" name="state" value="male" required
+      /></label>
+      <label>Female<input type="radio" name="state" value="female" /></label>
 
-      <p>Adult ?</p>
+      <label>Adult ?<input type="checkbox" name="isAdult" /></label>
 
-      <input type="checkbox">
+        <input type="file">
 
       <button type="submit">Done!</button>
+      <input type="submit" value="Done!" />
+
+      <input type="reset" />
+
     </form>
   </body>
 </html>
 
-
-
-
-
-
-
 <!-- 
 
 
+  <input type="text"> (default value)
+  <input type="checkbox">
+  <input type="email">
+  <input type="password">
+  <input type="radio">
+  <input type="tel">
+
+  <input type="submit">
+  <input type="reset">
+  <input type="image">
+  
   <input type="button">
-<input type="checkbox">
+  <input type="hidden">
+  <input type="file">
+
+
+
+<input type="number">
+<input type="range">
+<input type="search">
+<input type="url">
 <input type="color">
+
 <input type="date">
 <input type="datetime-local">
-<input type="email">
-<input type="file">
-<input type="hidden">
-<input type="image">
-<input type="month">
-<input type="number">
-<input type="password">
-<input type="radio">
-<input type="range">
-<input type="reset">
-<input type="search">
-<input type="submit">
-<input type="tel">
-<input type="text"> (default value)
 <input type="time">
-<input type="url">
+<input type="month">
 <input type="week">
  -->
