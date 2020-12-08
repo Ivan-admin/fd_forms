@@ -6,3 +6,15 @@ input{
 label{
   display: flex;
 }
+
+h1{
+  color: red;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex > *{
+  flex: 1;
+}

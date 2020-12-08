@@ -7,88 +7,111 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <form method="POST" enctype="multipart/form-data">
-      <label>
-        <span>Enter your name:</span>
+    <form method="GET">
+      <fieldset>
+        <legend>ENTER YOUR PERSONAL DATA</legend>
+
+        <label>
+          <span>Enter your name:</span>
+          <input
+            autofocus
+            type="text"
+            placeholder="First name"
+            name="firstName"
+            required
+          />
+        </label>
+        <label>
+          <span> Enter your surname: </span>
+          <input type="text" placeholder="Last Name" name="lastName" required />
+        </label>
         <input
-          autofocus
-          type="text"
-          placeholder="First name"
-          name="firstName"
+          type="tel"
+          autocomplete="on"
+          placeholder="Your telephone here:"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>ENTER YOUR AUTH DATA</legend>
+        <label>
+          <span>Enter your email:</span>
+          <input
+            type="email"
+            autocomplete="email"
+            placeholder="Email here"
+            name="email"
+            required
+          />
+        </label>
+
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
           required
         />
-      </label>
-      <label>
-        <span> Enter your surname: </span>
-        <input type="text" placeholder="Last Name" name="lastName" required />
-      </label>
+      </fieldset>
 
-      <input type="tel" autocomplete="on" placeholder="Your telephone here:" />
+      <div class="flex">
+        <fieldset>
+          <legend>Opional fields</legend>
+          <input type="text" placeholder="Введите размер ноги" value="44" />
+          <label>Adult ?<input type="checkbox" name="isAdult" /></label>
+        </fieldset>
 
-      <label>
-        <span>Enter your email:</span>
-        <input
-          type="email"
-          autocomplete="email"
-          placeholder="Email here"
-          name="email"
-          required
-        />
-      </label>
+        <fieldset>
+          <legend>Choose your state</legend>
+          <label>
+            Male <input type="radio" name="state" value="male" required />
+          </label>
+          <label
+            >Female<input type="radio" name="state" value="female"
+          /></label>
+        </fieldset>
+      </div>
 
-      <input type="text" placeholder="Введите размер ноги" value="44"/>
+      <fieldset>
+        <legend>SELECT YOUR CITY</legend>
 
-      <input type="password" placeholder="Password" name="password" required />
+        <select name="city" multiple>
+          <optgroup label="Russia">
+            <option value="moscow">МОСКВА</option>
+            <option value="city1">City 1</option>
+            <option value="city2">City 2</option>
+            <option value="city3">City 3</option>
+            <option value="city4">City 4</option>
+            <option value="city5">City 5</option>
+            <option value="city6">City 6</option>
+            <option value="city7">City 7</option>
+            <option value="city8">City 8</option>
+            <option value="city9">City 9</option>
+            <option value="city10">City 10</option>
+          </optgroup>
+          <optgroup label="Ukraine">
+            <option value="kyiv">КИЕВ</option>
+            <option value="city@101">City @101</option>
+            <option value="city@102">City @102</option>
+            <option value="city@103">City @103</option>
+            <option value="city@104">City @104</option>
+            <option value="city@105">City @105</option>
+            <option value="city@106">City @106</option>
+            <option value="city@107">City @107</option>
+            <option value="city@108">City @108</option>
+            <option value="city@109">City @109</option>
+            <option value="city@1010">City @1010</option>
+          </optgroup>
+        </select>
+      </fieldset>
 
-      <p>Choose your state:</p>
+      <fieldset>
+        <legend>Tell me about yourself</legend>
 
-      <label>
-        Male <input type="radio" name="state" value="male" required
-      /></label>
-      <label>Female<input type="radio" name="state" value="female" /></label>
+          <textarea wrap="soft" name="info" cols="30" rows="10"></textarea>
 
-      <label>Adult ?<input type="checkbox" name="isAdult" /></label>
-
-        <input type="file">
+      </fieldset>
 
       <button type="submit">Done!</button>
-      <input type="submit" value="Done!" />
-
-      <input type="reset" />
-
     </form>
   </body>
 </html>
-
-<!-- 
-
-
-  <input type="text"> (default value)
-  <input type="checkbox">
-  <input type="email">
-  <input type="password">
-  <input type="radio">
-  <input type="tel">
-
-  <input type="submit">
-  <input type="reset">
-  <input type="image">
-  
-  <input type="button">
-  <input type="hidden">
-  <input type="file">
-
-
-
-<input type="number">
-<input type="range">
-<input type="search">
-<input type="url">
-<input type="color">
-
-<input type="date">
-<input type="datetime-local">
-<input type="time">
-<input type="month">
-<input type="week">
- -->
