@@ -4,20 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <label  for="first-name">First name</label>
+    <form method="GET">
+      <label>
+        <span>Enter your name:</span>
+        <input
+          autofocus
+          type="text"
+          placeholder="First name"
+          name="firstName"
+          pattern="[A-Z][a-z]{2,15}"
+          required
+        />
+      </label>
+      <label>
+        <span> Enter your surname: </span>
+        <input
+          type="text"
+          pattern="[A-Z][a-z]{2,15}"
+          placeholder="Last Name"
+          name="lastName"
+          required
+        />
+      </label>
 
-    <form>
-      <input id="first-name" autofocus type="text" placeholder="First name">
-      <input type="text" placeholder="Last Name">
-      <input type="password" placeholder="Password">
+      <input type="tel" autocomplete="on" placeholder="Your telephone here:" />
 
+      <label>
+        <span>Enter your email:</span>
+        <input
+          type="email"
+          autocomplete="email"
+          placeholder="Email here"
+          name="email"
+          required
+        />
+      </label>
+
+      <input type="text" pattern="[0-9]{2}" placeholder="Введите размер ноги" />
+
+      <input
+        type="password"
+        pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,32}"
+        placeholder="Password"
+        name="password"
+        required
+      />
+
+      <p>Choose your state:</p>
+
+      <label> Male <input type="radio" name="state" value="male" required/></label>
+      <label>Female<input type="radio" name="state" value="female"/></label>
+
+      <p>Adult ?</p>
+
+      <input type="checkbox">
 
       <button type="submit">Done!</button>
-
     </form>
-
   </body>
 </html>
+
+
+
+
+
+
+
+<!-- 
+
+
+  <input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text"> (default value)
+<input type="time">
+<input type="url">
+<input type="week">
+ -->
