@@ -2,3 +2,23 @@
   margin: 0;
   padding: 0;
 }
+
+.user-card-container {
+  display: flex;
+  justify-content: center;
+}
+.user-card {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid red;
+}
+
+.user-image {
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
