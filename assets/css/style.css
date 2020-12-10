@@ -1,0 +1,18 @@
+/* @import "./reset.css"; */
+@import "./font_face.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1:nth-child(1) {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Nerko";
+  font-weight: 400;
+}
