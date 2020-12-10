@@ -1,5 +1,6 @@
-@import "./header.css";
-
+@import "./reset.css";
+@import "./main.css";
+@import "./user_card.css";
 /*
 xs <576px   - extra small 
 sm ≥576px	  - small 

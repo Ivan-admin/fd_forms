@@ -1,0 +1,11 @@
+body{
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+
+  flex-wrap: wrap;
+
+  flex-direction: column;
+
+  justify-content: space-around;
+}
