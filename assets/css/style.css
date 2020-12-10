@@ -1,7 +1,1 @@
-@import "reset.css";
-@import "./style_for_print.css" print;
-@import "./style_for_screen.css" screen;
-@import "./style_common.css" print, screen;
-@import "./style_for_600px.css" screen and (min-width: 600px) and
-  (max-width: 900px);
-@import "./font_face.css";
+@import "./header.css";

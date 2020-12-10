@@ -1,0 +1,11 @@
+h1 {
+  color: black;
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    color: teal;
+    margin: 20px 0;
+  }
+}
