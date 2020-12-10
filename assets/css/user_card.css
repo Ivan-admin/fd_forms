@@ -3,12 +3,12 @@
   display: flex;
   font-family: sans-serif;
   margin: 10px;
+  max-width: 540px;
 }
 .photo-wrapper {
   align-self: stretch;
 
   display: flex;
-
   --size: 200px;
   width: var(--size);
 
@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .user-name {
   text-transform: capitalize;
@@ -49,8 +49,6 @@
   font-weight: 600;
 
   opacity: 0.7;
-}
-.user-links {
 }
 .link {
   text-decoration: none;
@@ -79,9 +77,6 @@
   .photo-wrapper {
     clip-path: unset;
     width: 100%;
-  }
-  .tag {
-    /* font-size: 1rem; */
   }
   .user-links {
     display: flex;
