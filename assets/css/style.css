@@ -1,1 +1,10 @@
 @import "./header.css";
+
+/*
+xs <576px   - extra small 
+sm ≥576px	  - small 
+md ≥768px   - medium
+lg ≥992px   - large
+xl ≥1200px  - x-large
+xxl ≥1400px - xx-large
+*/
